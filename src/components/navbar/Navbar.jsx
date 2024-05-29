@@ -219,6 +219,7 @@ const Navbar = () => {
           </li>
           <li><NavLink to='/about'>About</NavLink></li>
           <li><NavLink to='/why-us'>Why Us?</NavLink></li>
+          <li><NavLink to='/why-us'>Our Clients</NavLink></li>
           <li>
             <Dropdown overlay={procedureMenu}>
               <NavLink to='/procedure' className='ant-dropdown-link' onClick={e => e.preventDefault()}>

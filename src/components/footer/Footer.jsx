@@ -6,9 +6,18 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+
+  const navigate = useNavigate();
+
+  const openNepalTechWebsite = () => {
+    window.open('https://www.nepaltechinnov.com', '_blank');
+  }
+  
+  
+
   return (
     <>
     <div className='footerContainer'> 
@@ -38,11 +47,20 @@ const Footer = () => {
             <ul className='icons'>
             <Link to="https://www.facebook.com/linkstarmanpowerservices" target="_blank"> <FaSquareFacebook /></Link>
             <Link to="https://www.instagram.com/linkstarmanpower/" target="_blank"> <FaSquareInstagram /></Link>
-              <p><FaTwitterSquare/></p> 
-              
+              <p><FaTwitterSquare/></p>              
             </ul>
           </div>
         </div>
+    </div>
+
+    <div className='copyrightContainer'>
+    <div className='powredByNepalTech container'>
+        <h4  onClick={openNepalTechWebsite}>Powered By Nepal Tech</h4>
+      </div>
+      <div className='copyrightContent container'>
+      <h4>Copyright &copy; 2024 By Link Star || All Right Reserved</h4>  
+      </div>
+     
     </div>
     </div>
       

@@ -73,7 +73,8 @@ const dropdownData = [
     para4: 'Nepalese professionals are the most pursued in every sector globally, for their intellectual, technical, physical and adaptive abilities. And when it comes to outsourcing manpower',
     para5: 'I would like to assure reliability and accuracy.',
     para6 : 'Thanks and regards,',
-    para7: ' Chandra Mani Rai Chairperson',
+    para7: ' Chandra Mani Rai',
+    para8: ' Chairperson',
   },
   {
     path: '/our-company/managing-director',
@@ -84,7 +85,8 @@ const dropdownData = [
     para4: `We look forward to working with your esteemed organization in the days to come with mutual benefits.`,
     para5:`Assuring you of quality services.`,
     para6 : 'Thanks and regards,',
-    para7 : `Harka Mani Rai Executive Director`,
+    para7 : `Harka Mani Rai`,
+    para8: 'Executive Director',
   },
   {
     path: '/our-company/intl-marketing-director',

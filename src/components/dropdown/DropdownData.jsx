@@ -12,9 +12,10 @@ const DropdownData = ({heading, para1, para2, para3, para4, para5, para6, para7,
                 <p>{para3}</p>
                 <p>{para4}</p>
                 <p>{para5}</p>
+                <div>
                 <p>{para6}</p>    
                 <p>{para7}</p>        
-                <p>{para8}</p>   
+                <p>{para8}</p></div>   
                 <p>{para9}</p>   
                 <p>{para10}</p>   
 
