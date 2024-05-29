@@ -40,7 +40,7 @@ const Accordian = () => {
               <span>{isAccordionExpanded(2) ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowRight />}</span>HealthCare
             </h3>
             {isAccordionExpanded(2) && (
-              <p className='accord_para'> vital services promoting well-being, treatment, and prevention for individuals and communities.</p>
+              <p className='accord_para'> vital services promoting well-being, treatment, and prevention.</p>
             )}
           </div>
 
@@ -49,7 +49,7 @@ const Accordian = () => {
               <span>{isAccordionExpanded(3) ? <MdOutlineKeyboardArrowDown /> : <MdOutlineKeyboardArrowRight />}</span> Facilities Management
             </h3>
             {isAccordionExpanded(3) && (
-              <p className='accord_para'> ensuring optimal functionality, safety, and efficiency of built environments and infrastructure.</p>
+              <p className='accord_para'> ensuring optimal functionality, safety, and efficiency of built environments.</p>
             )}
           </div>
 

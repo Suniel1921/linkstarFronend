@@ -1,15 +1,30 @@
 .logo{
-    width: 6%;
+    width: 5%;
+    margin-left: 33px;
 }
 .banner{
     padding: 12px;
 }
 
 
-.navbar{
+.navbar {
     margin: 12px;
     background-color: #0082f1;
+    position: fixed;
+    z-index: 9;
+    /* top: 53px; */
 }
+
+.navbarContainer.scrolled .navbar {
+    background-color: white;
+    box-shadow: 0px 0px 4px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .navbarContainer.scrolled .navlinks li a {
+    color: black; 
+  }
+  
+
 
 .navlinks{
     display: flex;
@@ -85,6 +100,10 @@
     }
     
 }
+
+
+
+
 
 
 

@@ -4,11 +4,14 @@
     align-items: center;
     gap: 12px;
     color: var(--brownColor);
+    cursor: pointer;
 }
+
 
 .whatsappIcon{
     font-size: 23px;
     color: green;
+    cursor: pointer;
 }
 
 
@@ -19,8 +22,9 @@
     gap: 3px;
 }
 .email{
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 4px;
+    color: #0082f1;
 }
 @keyframes whatsappAnimation {
     0% {

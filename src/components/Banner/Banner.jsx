@@ -1,7 +1,7 @@
 import '../Banner/banner.css';
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
+import { CiLocationOn } from "react-icons/ci";
+import { TfiEmail } from "react-icons/tfi";
+import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { RiWhatsappFill } from "react-icons/ri";
 
 const Banner = () => {
@@ -28,16 +28,17 @@ const Banner = () => {
         {/* <img className='logo' src="/image/logopng.png" alt="iink star logo" /> */}
           {/* <p><FaMapMarkerAlt/>samakhusi,Kathmandu,Nepal</p> */}
           <div className='locationIcon'>
-            <p className='email'><FaMapMarkerAlt/></p> 
+            <p className='email'><CiLocationOn/></p> 
             <p>samakhusi,Kathmandu,Nepal</p>
           </div>
           <div onClick={handleEmailClick} className='locationIcon'>
-            <p className='email'><MdEmail/></p>
+            <p className='email'><TfiEmail/></p>
             <p>{email}</p>
           </div>
 
           <div onClick={handlePhoneClick} className='locationIcon'> 
-            <p className='email'><FaPhoneAlt/></p>
+            <p className='email'><MdOutlinePhoneInTalk/></p>
+           
             <p>{phoneNumber}</p>
           </div>
 

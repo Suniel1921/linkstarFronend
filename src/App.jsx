@@ -72,7 +72,8 @@ const dropdownData = [
     para3: 'Having been in the industry for over several years, we envision global prosperity as well as mutual welfare of both all Nepalese manpower and overseas businesses organization.',
     para4: 'Nepalese professionals are the most pursued in every sector globally, for their intellectual, technical, physical and adaptive abilities. And when it comes to outsourcing manpower',
     para5: 'I would like to assure reliability and accuracy.',
-    para6: 'Thank You. Chandra Mani Rai Chairperson'
+    para6 : 'Thanks and regards,',
+    para7: ' Chandra Mani Rai Chairperson',
   },
   {
     path: '/our-company/managing-director',
@@ -82,7 +83,8 @@ const dropdownData = [
     para3: `We always consider the fact that the human potential should be utilized to the maximum extent for the betterment of the world. Hence, our priority is always to bridge up the opportunities and the human resources. In short, we undertake the responsibility to provide the right worker for the right job.`,
     para4: `We look forward to working with your esteemed organization in the days to come with mutual benefits.`,
     para5:`Assuring you of quality services.`,
-    para6 : `Harka Mani Rai Executive Director`
+    para6 : 'Thanks and regards,',
+    para7 : `Harka Mani Rai Executive Director`,
   },
   {
     path: '/our-company/intl-marketing-director',
@@ -91,7 +93,7 @@ const dropdownData = [
     para2: 'It is great pleasure to introduce ourselves as a specialist in the field of Manpower Recruiting. we are here for you to give the best of human work force, Whether our candidates with previous overseas employment experience, or those entering into overseas assignments or the first time, we ensure theyre available at the most competitive pay scales, and yet prepared in every which way to deliver maximum efficiency. Even our continual expansion in workforce and client base cannot deter our commitment to you, or compel us to compromise on our quality.',
     para3: 'Having ingenious quality, we built a glorious reputation providing a total co-operations & services to our valued & respected clients promptly, efficiently, and providing more workers as required by the principal. We always keep our clients interest in the highest priority in order to place the workers. We used to recruit manpower as professionals, Highly Skilled, Skilled, Semi-Skilled, Unskilled workers having knowledge of English & Hindi speaking within shortest possible time as required.',
     para4: 'You may contact us on any business day for any inquisition regarding the further information about our organization and services.',
-    para5: `Sanju B.K. Int'l Marketing Director`
+    para5: `Sanju B.K. Int'l Marketing Director`,
   },
   {
     path : '/our-company/managing-director',
@@ -197,7 +199,6 @@ const App = () => {
     AOS.init({ duration: 1000 }); // You can adjust the duration as needed
   }, []); // This runs once on component mount
 
-
   return (
     <Router>
       <Routes>
@@ -217,7 +218,6 @@ const App = () => {
           <Route path='/dashboard/admin' element={<AdminDashboard />}>
             <Route path='/dashboard/admin/createVacency' element={<CreateVacency/>} />
             <Route path='/dashboard/admin/contactData' element={<ContactData/>} />
-
         
           </Route>
         </Route>
