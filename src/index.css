@@ -30,7 +30,7 @@
 
 .global_flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     gap: 3rem;
     padding: 8px;

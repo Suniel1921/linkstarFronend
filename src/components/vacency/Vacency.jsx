@@ -43,7 +43,7 @@ const Vacency = () => {
   return (
     <div className='vacency_container'>
       <div className="container">
-        <div className="vacency_content">
+        <div className="vacency_content global_margin_top">
           <h1 style={headingStyle}>Current Open Vacancies</h1>
           {vacancies.length === 0 ? (
             <p>No vacancies found</p>
@@ -104,7 +104,7 @@ const headingStyle = {
   textAlign: 'center',
   marginBottom: '20px',
   fontSize: '24px',
-  color: '#333'
+  color: '#333',
 };
 
 const tableHeaderStyle = {
