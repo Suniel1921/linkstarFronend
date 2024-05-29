@@ -1,0 +1,80 @@
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+
+.left_About{
+    width: 50%;
+}
+.right_About{
+    width: 50%;
+}
+
+.licensesddHeading{
+    border-radius: 1px solid blue;
+    background-color: red;
+    
+}
+
+
+
+.aboutListIcon{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 34px;
+}
+
+.about_icons{
+    padding: 14px;
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+    border-radius: 100%;
+    background-color: var(--secondaryBlueColor);
+    color: var(--textWhite);
+}
+
+
+.aboutList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1130px) {
+    .left_About img{
+        width: 90%;
+    }
+    
+}
+@media screen and (max-width: 900px) {
+    .aboutContent{
+        flex-direction: column;
+    }
+    .left_About img{
+        width: 50%;
+    }
+    .left_About{
+        width: 100%;
+    }
+    .right_About{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 450px) {
+    .aboutList {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    
+}

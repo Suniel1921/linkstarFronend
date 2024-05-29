@@ -1,0 +1,51 @@
+.bannerDetails{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    color: var(--brownColor);
+}
+
+.whatsappIcon{
+    font-size: 23px;
+    color: green;
+}
+
+
+.locationIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+.email{
+    font-size: 20px;
+    margin-top: 4px;
+}
+@keyframes whatsappAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px); 
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.bannerWhatsapp .whatsappIcon {
+    display: inline-block;
+    vertical-align: middle;
+    animation: whatsappAnimation 1s infinite; 
+    animation-timing-function: ease;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 750px) {
+    .bannerDetails{
+        display: none;
+    }
+    
+}

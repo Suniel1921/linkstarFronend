@@ -1,0 +1,44 @@
+.appynow_container{
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.apply_Btn{
+    padding: 15px 38px;
+    border: none;
+    background-color: #0082f1;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.applynow_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+.jobImg{
+    width: 100%;
+}
+
+/* .left_appynow{
+    width: 50%;
+}
+.right_applynow{
+    width: 50%;
+} */
+
+
+.appynow_form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.appynow_form input{
+    padding: 14px;
+    outline: none;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
