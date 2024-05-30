@@ -152,7 +152,7 @@ const ApplyNow = () => {
     }
 
     // Prepare mailto link with all form data
-    const mailtoLink = `mailto:info@linkstar.com.np?subject=Job Application&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AAddress: ${address}%0D%0APhone: ${phone}%0D%0ADate of Birth: ${dateOfBirth}%0D%0AInterested Country: ${country}%0D%0AEducation: ${education}`;
+    const mailtoLink = `mailto:info@linkstar.com?subject=Job Application&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AAddress: ${address}%0D%0APhone: ${phone}%0D%0ADate of Birth: ${dateOfBirth}%0D%0AInterested Country: ${country}%0D%0AEducation: ${education}`;
 
     // Open mail client with mailto link
     window.location.href = mailtoLink;
