@@ -6,7 +6,7 @@ const OurBusinessPartner = () => {
     <>
     <div className="ourbusinessPartner_Container">
         <div className="container">
-            <h2>Our Business Partner</h2>
+            <h2>Business Partner</h2>
 
         </div>
     </div>
