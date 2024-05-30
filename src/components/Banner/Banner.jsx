@@ -29,7 +29,7 @@ const Banner = () => {
           {/* <p><FaMapMarkerAlt/>samakhusi,Kathmandu,Nepal</p> */}
           <div className='locationIcon'>
             <p className='email'><CiLocationOn/></p> 
-            <p>samakhusi,Kathmandu,Nepal</p>
+            <p>Samakhusi,Kathmandu,Nepal</p>
           </div>
           <div onClick={handleEmailClick} className='locationIcon'>
             <p className='email'><TfiEmail/></p>

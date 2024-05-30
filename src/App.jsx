@@ -61,6 +61,7 @@ import ApplyNow from './components/applynow/ApplyNow';
 import ContactData from './components/admin/ContactData';
 import AOS from "aos";
 import { useEffect } from 'react';
+import OurBusinessPartner from './components/ourPartner/OurBusinessPartner';
 
 // Data for DropdownData components
 const dropdownData = [
@@ -225,6 +226,7 @@ const App = () => {
           <Route path='/why-us' element={<WhyUs />} />
           <Route path='/demands' element={<Vacency />} />
           <Route path='/apply-now' element={<ApplyNow />} />
+          <Route path='/our-business-partner' element={<OurBusinessPartner/>}/>
 
           {/* Render DropdownData components */}
           {dropdownData.map(({ path, heading, para1, para2, para3, para4, para5, para6, para7, para8, para9, para10 }) => (
