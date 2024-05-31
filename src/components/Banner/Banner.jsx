@@ -6,6 +6,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 const Banner = () => {
   const email = "info@linkstar.com.np";
+  // const email = "anielthakur1921@gmail.com";
   const phoneNumber = "+97714957047";
   const whatsappNumber = '+9779851337276'
 
@@ -29,7 +30,7 @@ const Banner = () => {
           {/* <p><FaMapMarkerAlt/>samakhusi,Kathmandu,Nepal</p> */}
           <div className='locationIcon'>
             <p className='email'><CiLocationOn/></p> 
-            <p>Samakhusi,Kathmandu,Nepal</p>
+            <p>Samakhusi, Kathmandu, Nepal</p>
           </div>
           <div onClick={handleEmailClick} className='locationIcon'>
             <p className='email'><TfiEmail/></p>

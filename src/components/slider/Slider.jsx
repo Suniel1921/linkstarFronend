@@ -3,7 +3,7 @@ import "../slider/slider.css";
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
-  const images = ["/image/m.jpg", "/image/m1.jpg", "/image/b3.jpg"];
+  const images = ["/image/b4.jpg", "/image/m1.jpg", "/image/b3.jpg"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -23,11 +23,12 @@ const Slider = () => {
           <div className="text container">
             <p>Nepal's Top Recruitment Solution Provider</p>
             <h2 className="heading">
-            Premier manpower agency in Nepal offering <br /> comprehensive recruitment solutions.
+            Top-tier manpower agency in Nepal delivering <br />
+             comprehensive staffing services
             </h2>
-            <p>
+            {/* <p>
             Elevate your recruitment strategy with Nepal's leading manpower agency. Our comprehensive solutions ensure seamless hiring processes.
-            </p>
+            </p> */}
           </div>
         </div>
       ))}

@@ -47,7 +47,7 @@ const Footer = () => {
             <ul className='icons'>
             <Link to="https://www.facebook.com/linkstarmanpowerservices" target="_blank"> <FaSquareFacebook /></Link>
             <Link to="https://www.instagram.com/linkstarmanpower/" target="_blank"> <FaSquareInstagram /></Link>
-              <p><FaTwitterSquare/></p>              
+              {/* <p><FaTwitterSquare/></p>               */}
             </ul>
           </div>
         </div>

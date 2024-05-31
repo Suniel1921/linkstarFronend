@@ -2,10 +2,13 @@ import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
 import '../vacency/vacency.css';
+import {Link} from 'react-router-dom'
+
 
 const Vacency = () => {
   const [vacancies, setVacancies] = useState([]);
   const [selectedImage, setSelectedImage] = useState(null);
+
 
   const getAllVacancy = async () => {
     try {
@@ -60,6 +63,7 @@ const Vacency = () => {
                   <th style={tableHeaderStyle}>Accommodation</th>
                   <th style={tableHeaderStyle}>Transportation</th>
                   <th style={tableHeaderStyle}>Overtime</th>
+                  <th style={tableHeaderStyle}>Apply</th>
                 </tr>
               </thead>
               <tbody>
@@ -81,6 +85,7 @@ const Vacency = () => {
                     <td style={tableCellStyle}>{vacancy.accommodation}</td>
                     <td style={tableCellStyle}>{vacancy.transportation}</td>
                     <td style={tableCellStyle}>{vacancy.overtime}</td>
+                    <td style={tableCellStyle}><Link to='/apply-now'>Apply Here</Link></td>
                   </tr>
                 ))}
               </tbody>
@@ -117,7 +122,7 @@ const tableHeaderStyle = {
 const tableCellStyle = {
   border: '1px solid black',
   padding: '8px',
-  textAlign: 'left'
+  textAlign: 'left',
 };
 
 const popupOverlayStyle = {
@@ -146,8 +151,7 @@ const closeButtonStyle = {
   position: 'absolute',
   top: '10px',
   right: '10px',
-  fontSize: '30px',
-  cursor: 'pointer'
+  fontSize: '30px'
 };
 
 export default Vacency;
