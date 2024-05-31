@@ -98,6 +98,9 @@
     .logo{
         width: 15%;
     }
+    .navlinks.show {
+        top: 84px;
+    }
     
 }
 
