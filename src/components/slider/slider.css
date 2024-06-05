@@ -1,4 +1,4 @@
-/* .homeFormContainer{
+.homeFormContainer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,11 +61,14 @@
   .text h2{
     font-size: 42px;
     width: 100%;
+    margin-top: 84px;
   }
 
 
   .text p{
     width: 70%;
+    text-align: center;
+    margin-left: 100px;
   }
 
   .contact_btn{
@@ -74,6 +77,8 @@
     margin-bottom: 20px;
     margin-top: 20px;
   }
+
+  
   
 
 
@@ -108,7 +113,7 @@
       left: 30px;
   }
     
-  } */
+  }
 
 
 
@@ -119,8 +124,13 @@
 
 
 
+
+
+  
 
   /* ********another without slider style******* */
+
+/*   
 
   .bgGrphicContainer{
     display: flex;
@@ -196,10 +206,9 @@
 
 
 
+ */
 
-
-
-/* Animation for the first logo moving up */
+/* 
 .logo1Animate {
   position: relative;
   animation: logo1Animate 10s linear infinite;
@@ -211,11 +220,11 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-100px); /* Move logo1 up */
+    transform: translateY(-100px); 
   }
 }
 
-/* Animation for the second logo moving down */
+
 .logo2Animate {
   position: relative;
   animation: logo2Animate 10s linear infinite;
@@ -227,7 +236,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(100px); /* Move logo2 down */
+    transform: translateY(100px); 
   }
 }
 
@@ -344,4 +353,4 @@
   }
 
   
-}
+} */

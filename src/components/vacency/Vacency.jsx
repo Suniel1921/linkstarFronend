@@ -318,6 +318,15 @@ const closeButtonStyle = {
   top: '10px',
   right: '10px',
   fontSize: '30px',
+  backgroundColor: '#D32027',
+  color: 'white',
+  borderRadius: '50%',
+  height: '40px',
+  width: '40px',  
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  cursor: 'pointer'
 };
 
 export default Vacency;

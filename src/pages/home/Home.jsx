@@ -15,7 +15,7 @@ const Home = () => {
     <div className="home_container">
         <div className="">
            <div className='slide_component'> <Slider/></div>
-           <Count/>
+           {/* <Count/> */}
             <About/>
            <CoverBanner/>
            <Services/>
