@@ -100,9 +100,6 @@
 // export default ApplyNow;
 
 
-
-
-
 import { useState } from 'react';
 import '../applynow/applynow.css';
 
@@ -131,28 +128,8 @@ const ApplyNow = () => {
     // Get form data
     const { name, email, address, phone, dateOfBirth, country, education } = formData;
 
-    // Get the file input element
-    const fileInput = document.getElementById('file');
-    // Check if a file is selected
-    const file = fileInput.files[0];
-    
-    // Create FormData object to append all form data
-    const formDataToSend = new FormData();
-    formDataToSend.append('name', name);
-    formDataToSend.append('email', email);
-    formDataToSend.append('address', address);
-    formDataToSend.append('phone', phone);
-    formDataToSend.append('dateOfBirth', dateOfBirth);
-    formDataToSend.append('country', country);
-    formDataToSend.append('education', education);
-    
-    // Append the file if selected
-    if (file) {
-      formDataToSend.append('file', file);
-    }
-
-    // Prepare mailto link with all form data
-    const mailtoLink = `mailto:info@linkstar.com?subject=Job Application&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AAddress: ${address}%0D%0APhone: ${phone}%0D%0ADate of Birth: ${dateOfBirth}%0D%0AInterested Country: ${country}%0D%0AEducation: ${education}`;
+    // Create mailto link with all form data
+    const mailtoLink = `mailto:info@linkstar.com.np?subject=Job Application&body=Name: ${name}%0D%0AEmail: ${email}%0D%0AAddress: ${address}%0D%0APhone: ${phone}%0D%0ADate of Birth: ${dateOfBirth}%0D%0AInterested Country: ${country}%0D%0AEducation: ${education}%0D%0A%0D%0APlease attach your resume and any other relevant documents.`;
 
     // Open mail client with mailto link
     window.location.href = mailtoLink;
@@ -172,7 +149,7 @@ const ApplyNow = () => {
                 <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder='Email' />
                 <input type="text" name="address" value={formData.address} onChange={handleChange} placeholder='Address' />
                 <input type="number" name="phone" value={formData.phone} onChange={handleChange} placeholder='Phone' />
-                <input type="text" name="dateOfBirth" value={formData.dateOfBirth} onChange={handleChange} placeholder='Date of Birth' />
+                <input type="date" name="dateOfBirth" value={formData.dateOfBirth} onChange={handleChange} placeholder='Date of Birth' />
                 <input type="text" name="country" value={formData.country} onChange={handleChange} placeholder='Interested Country' />
                 <input type="text" name="education" value={formData.education} onChange={handleChange} placeholder='Education' />
                 <input type="file" name="file" id="file" />

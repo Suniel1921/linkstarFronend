@@ -1,51 +1,3 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-// import Layout from './layout/Layout';
-// import About from './pages/about/About';
-// import Contact from './pages/contact/Contact';
-// import Home from './pages/home/Home';
-// import WhyUs from './components/whyUs/WhyUs';
-// import toast, { Toaster } from 'react-hot-toast';
-// import Vacency from './components/vacency/Vacency';
-// import AdminDashboard from './components/admin/AdminDashboard';
-// import CreateVacency from './components/admin/CreateVacency';
-// import DropdownData from './components/dropdown/DropdownData';
-
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <Routes>
-//         <Route path='/' element={<Layout />}>
-//           <Route index element={<Home />} />
-//           <Route path='about' element={<About />} />
-//           <Route path='contact' element={<Contact />} />
-//           <Route path='/why-us' element={<WhyUs/>}/>
-//           <Route path='/vacency' element={<Vacency/>}/>
-//           <Route path='/our-company/chairperson' element={<DropdownData heading='iam from prop data' para = 'paragraph goes here'/>}/>
-//           <Route path='/our-company/managing-director' element={<DropdownData heading='iam from managing director' para = 'paragraph goes here'/>}/>
-//           <Route path='/our-company/executive-director' element={<DropdownData heading='iam from executive director' para = 'paragraph goes here'/>}/>
-
-
-//           <Route path='/dashboard/admin' element={<AdminDashboard/>}>
-//           <Route path='/dashboard/admin/createVacency' element={<CreateVacency/>}/>
-
-//           </Route>
-//         </Route>
-//       </Routes>
-//       <Toaster />
-//     </Router>
-//   );
-// }
-
-// export default App;
-
-
-
-
-
-
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './layout/Layout';
 import About from './pages/about/About';
@@ -97,7 +49,7 @@ const dropdownData = [
     para3: 'Having ingenious quality, we built a glorious reputation providing a total co-operations & services to our valued & respected clients promptly, efficiently, and providing more workers as required by the principal. We always keep our clients interest in the highest priority in order to place the workers. We used to recruit manpower as professionals, Highly Skilled, Skilled, Semi-Skilled, Unskilled workers having knowledge of English & Hindi speaking within shortest possible time as required.',
     para4: 'You may contact us on any business day for any inquisition regarding the further information about our organization and services.',
     para5: ``,
-    para6: `Thanks and regards`,
+    para6: `Thanks and regards,`,
     para7: `Sanju B.K.`,
     para8: `Int'l Marketing Director`
   },
@@ -109,7 +61,7 @@ const dropdownData = [
     para3: `We have established Help Desk, Public Relation Desk, Quarries Desk that address to the people directly. Our Website helps the clients abroad to know about us and Nepalese workers. Likewise, management is always eager to deal on the different issues with clients. As our success is closely related with our well-wisher, clients and the employee candidate we are always ready to co-ordinate with deep respect and responsibility. With experience of many years in the best Manpower from Nepal, I want to assure for quality services.`,
     para4:`Thank you for your business`,
     para5: ``,
-    para6: `Thanks and regards`,
+    para6: `Thanks and regards,`,
     para7: `Durga Mani Rai`,
     para8: `Managing Director`,
     
@@ -122,7 +74,7 @@ const dropdownData = [
   para3: `Any business day, you are welcome to get in touch with us if you have any questions about our company or our services.`,
   para4: ` `,
   para5: ``,
-  para6: 'Thanks and regards',
+  para6: 'Thanks and regards,',
   para7: `Ratna Bahadur Adhikari`,
   para8: `Marketing Officer`
  },
@@ -134,7 +86,7 @@ const dropdownData = [
   para3: `I would like to assure on the reliability and accuracy on us.`,
   para4: `Thank You`,
   para5: ``,
-  para6: `Thanks and regards`,
+  para6: `Thanks and regards,`,
   para7: `Padam Sundar Rai`,
   para8: `General Manager `,
  },
@@ -146,7 +98,7 @@ const dropdownData = [
   para3 : `We always consider the fact that the human potential should be utilized to the maximum extent for the betterment of the world. Hence, our priority is always to bridge up the opportunities and the human resources. In short, we undertake the responsibility to provide the right worker for the right job.`,
   para4: `We look forward to working with your esteemed organization in the days to come with mutual benefits`,
   para5: `Assuring you of quality services.`,
-  para6: `Thanks and regards`,
+  para6: `Thanks and regards,`,
   para7 : `ANG DAWA SHERPA`
  },
 

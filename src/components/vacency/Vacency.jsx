@@ -157,6 +157,13 @@
 // export default Vacency;
 
 
+
+
+
+
+
+
+
 // ****************static code*************
 
 import { useState } from 'react';
@@ -164,26 +171,27 @@ import '../vacency/vacency.css';
 import { Link } from 'react-router-dom';
 
 const Vacency = () => {
+
   const [vacancies] = useState([
     {
       _id: '1',
-      images: ['https://via.placeholder.com/100'],
-      position: 'Software Engineer',
+      images: ['/demandImage/demand2.jpg'],
+      position: 'Resturant Crew',
       vacancy: '5',
-      salary: '$5000',
+      salary: '150KD',
       food: 'Provided',
-      accommodation: 'Provided',
+      expiredDate: '02/06/2024',
       transportation: 'Provided',
       overtime: 'Available',
     },
     {
       _id: '2',
-      images: ['https://via.placeholder.com/100'],
-      position: 'Product Manager',
+      images: ['/demandImage/demand.jpg'],
+      position: 'StoreKeeper',
       vacancy: '2',
       salary: '$7000',
       food: 'Provided',
-      accommodation: 'Provided',
+      expiredDate: '02/06/2024',
       transportation: 'Provided',
       overtime: 'Available',
     },
@@ -215,7 +223,7 @@ const Vacency = () => {
                   <th style={tableHeaderStyle}>Vacancy</th>
                   <th style={tableHeaderStyle}>Salary</th>
                   <th style={tableHeaderStyle}>Food</th>
-                  <th style={tableHeaderStyle}>Accommodation</th>
+                  <th style={tableHeaderStyle}>Expired Date</th>
                   <th style={tableHeaderStyle}>Transportation</th>
                   <th style={tableHeaderStyle}>Overtime</th>
                   <th style={tableHeaderStyle}>Apply</th>
@@ -237,7 +245,7 @@ const Vacency = () => {
                     <td style={tableCellStyle}>{vacancy.vacancy}</td>
                     <td style={tableCellStyle}>{vacancy.salary}</td>
                     <td style={tableCellStyle}>{vacancy.food}</td>
-                    <td style={tableCellStyle}>{vacancy.accommodation}</td>
+                    <td style={tableCellStyle}>{vacancy.expiredDate}</td>
                     <td style={tableCellStyle}>{vacancy.transportation}</td>
                     <td style={tableCellStyle}>{vacancy.overtime}</td>
                     <td style={tableCellStyle}><Link to='/apply-now'>Apply Here</Link></td>
@@ -257,7 +265,9 @@ const Vacency = () => {
           </div>
         </div>
       )}
-    </div>
+
+</div>
+
   );
 };
 
@@ -300,6 +310,7 @@ const popupContentStyle = {
   maxWidth: '90%',
   maxHeight: '90%',
   overflow: 'auto',
+  top: '60px',
 };
 
 const closeButtonStyle = {

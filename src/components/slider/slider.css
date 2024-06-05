@@ -1,4 +1,4 @@
-.homeFormContainer{
+/* .homeFormContainer{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,7 +11,6 @@
   
   .slide {
     width: 100%;
-    /* height: 100%; */
     height: 90vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,7 +18,6 @@
     position: absolute;
     opacity: 0;
     transition: opacity 1s ease-in-out;
-    /* position: relative; */
   }
 
 
@@ -68,7 +66,6 @@
 
   .text p{
     width: 70%;
-    /* width: 50%; */
   }
 
   .contact_btn{
@@ -111,4 +108,240 @@
       left: 30px;
   }
     
+  } */
+
+
+
+
+
+
+
+
+
+
+
+  /* ********another without slider style******* */
+
+  .bgGrphicContainer{
+    display: flex;
+    justify-content: space-around;
   }
+
+  .bgContainer{
+    background-image: url('/image/asset 41.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+
+  .bg_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .bgPara{
+    font-size: 24px;
+    color: var(--secondaryBlueColor);
+   
+  }
+  .bgHeading{
+    font-size: 56px;
+    color: white;
+
+  }
+
+  .spanText{
+
+    color: var(--primaryRedColor);
+  }
+
+  .rating {
+    position: relative;
+    top: -76px;
+    left: 354px;
+  
+  
+}
+
+.ratingimg{ 
+  width: 10%;
+}
+
+.ratingText{
+  color: white;
+}
+
+
+
+
+
+.graphic1{
+  position: relative;
+  top: 34px;
+  left: 533px;
+  width: 80%;
+}
+
+.graphic2{
+  position: relative;
+  top: -134px;
+  right: 533px;
+  width: 80%;
+}
+
+
+
+
+
+
+
+/* Animation for the first logo moving up */
+.logo1Animate {
+  position: relative;
+  animation: logo1Animate 10s linear infinite;
+}
+
+@keyframes logo1Animate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-100px); /* Move logo1 up */
+  }
+}
+
+/* Animation for the second logo moving down */
+.logo2Animate {
+  position: relative;
+  animation: logo2Animate 10s linear infinite;
+}
+
+@keyframes logo2Animate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px); /* Move logo2 down */
+  }
+}
+
+
+
+.btnContainer{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.contact_btn{
+  padding: 13px 34px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primaryRedColor);
+  color: white;
+}
+.contact_btn:hover{
+  background-color: var(--darkBlueColor);
+  transition: .2s all ease;
+
+}
+
+.how_we_work_btn{
+  padding: 13px 34px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--secondaryBlueColor);
+  color: white;
+
+}
+
+.how_we_work_btn:hover{
+  background-color: var(--darkBgColor);
+  transition: .2s all ease;
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
+  .bgContainer{
+    margin-top: 75px;
+  }
+  .bgPara{
+    font-size: 24px;
+   
+  }
+  .bgHeading{
+    font-size: 36px;
+
+  }
+
+  
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .bgContainer{
+    margin-top: 75px;
+    height: 100vh;
+  }
+  .bgPara{
+    font-size: 20px;
+   
+  }
+  .bgHeading{
+    font-size: 22px;
+  }
+  .rating {
+    position: relative;
+    top: -726px;
+    left: 295px;
+}
+
+  
+}
+
+
+
+
+
+
+@media screen and (max-width: 450px) {
+  .bgContainer{
+    margin-top: 0px;
+  }
+  .bgPara{
+    font-size: 18px;
+   
+  }
+  .bgHeading{
+    font-size: 22px;
+  }
+
+  .heading1 {
+    font-size: 39px;
+    margin-bottom: 50px;
+}
+
+.heading2 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+  .rating {
+    position: relative;
+    top: -76px;
+    left: 165px;
+  }
+
+  
+}

@@ -10,7 +10,7 @@ const ContactData = () => {
 
   const fetchContactData = async () => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/v1/upload/allContactData`);
+      // const response = await axios.get(`${import.meta.env.VITE_API_URL}/api/v1/upload/allContactData`);
       if (response.data.success) {
         setContactData(response.data.data);
       } else {

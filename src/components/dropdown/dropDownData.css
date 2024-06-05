@@ -13,3 +13,12 @@
 .drop{
     line-height: 15px;
 }
+
+.drop p:nth-child(2) { 
+    margin-top: 34px;
+  }
+
+  .drop p:nth-child(2) { 
+    font-size: 18px;
+    font-weight: bold;
+  }
