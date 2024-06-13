@@ -29,7 +29,7 @@ const Services = () => {
       <div className="container">
         <h3>Our Services</h3>
         <div className="services_content">
-          <div className="left_service">
+          <div className="left_service" data-aos="zoom-in">
             <div className="card">
               <div className="child_card">
                 <p className='card_icons'><SiConstruct3/></p>
@@ -53,7 +53,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-          <div className="right_service">
+          <div className="right_service" data-aos="zoom-in-up">
             <img className='globalImg'
               src="/image/global.png"
               alt=""

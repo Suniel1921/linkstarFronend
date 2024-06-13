@@ -88,8 +88,9 @@
   @media screen and (max-width: 1130px) {
     .text p{
       font-size: 17px;
+      margin-left: -10px;
     }
-    
+   
   }
   
   @media screen and (max-width: 840px) {

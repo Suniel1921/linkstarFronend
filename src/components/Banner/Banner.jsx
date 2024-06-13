@@ -44,9 +44,9 @@ const Banner = () => {
           </div>
 
         </div>
-        <div className='bannerWhatsapp' onClick={handleWhatsAppClick}>
+        {/* <div className='bannerWhatsapp' onClick={handleWhatsAppClick}>
           <p><RiWhatsappFill className='whatsappIcon'/><span>{whatsappNumber}</span></p>
-        </div>
+        </div> */}
       </div>
     </>
   );

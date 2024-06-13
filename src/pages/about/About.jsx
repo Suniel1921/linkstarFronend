@@ -13,7 +13,7 @@ const About = () => {
             <div className="left_About" data-aos="fade-right">
               <img src="/image/hero.png" alt="" />
             </div>
-            <div className="right_About" data-aos="fade-up-right">
+            <div className="right_About" data-aos="fade-left">
             <h3>About Us</h3>
               <h3 className="heading">One Step To Your Future Starts Here</h3>
               <p style={{lineHeight: '22px'}}>

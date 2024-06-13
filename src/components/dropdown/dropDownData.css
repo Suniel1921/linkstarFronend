@@ -22,3 +22,9 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  .userImg{
+    height: 200px;
+    width: 400px;
+    object-fit: contain;
+  }

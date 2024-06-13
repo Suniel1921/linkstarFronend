@@ -36,7 +36,7 @@ const Footer = () => {
           <div className='contact_info'>
             <h3>Contact Info</h3>
             <ul className='links'>
-              <li><p><FaMapMarkerAlt/> samakhusi,Kathmandu,Nepal</p></li>
+              <li><p><FaMapMarkerAlt/>Samakhusi,Kathmandu,Nepal</p></li>
               <li><p><MdEmail/> info@linkstar.com.np</p></li>
               <li><p><FaPhoneAlt/>+97714361490</p></li>
             </ul>

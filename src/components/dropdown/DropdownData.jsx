@@ -1,5 +1,5 @@
 import '../dropdown/dropDownData.css';
-const DropdownData = ({heading, para1, para2, para3, para4, para5, para6, para7, para8, para9, para10}) => {
+const DropdownData = ({heading, userImg, para1, para2, para3, para4, para5, para6, para7, para8, para9, para10}) => {
 
   return (
     <>
@@ -13,6 +13,7 @@ const DropdownData = ({heading, para1, para2, para3, para4, para5, para6, para7,
                 <p>{para4}</p>
                 <p>{para5}</p>
                 <div className='drop'>
+                <img className='userImg' src={userImg} alt="Linkstart Member" />
                 <p>{para6}</p>    
                 <p>{para7}</p>        
                 <p>{para8}</p>

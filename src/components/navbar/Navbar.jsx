@@ -173,26 +173,30 @@ const Navbar = () => {
       <Menu.Item key="3">
         <NavLink to='/our-company/intl-marketing-director'>Words from Intl Marketing Director</NavLink>
       </Menu.Item>
-      <Menu.Item key="4">
-        <NavLink to='/our-company/marketing-officer'>Words from Marketing Officer</NavLink>
-      </Menu.Item>
       <Menu.Item key="5">
         <NavLink to='/our-company/general-manager'>Words from General Manager</NavLink>
       </Menu.Item>
       <Menu.Item key="6">
-        <NavLink to='/our-company/BOD'>Words from BOD</NavLink>
+        <NavLink to='/our-company/BOD'>Words from Executive Director</NavLink>
+      </Menu.Item>
+      <Menu.Item key="4">
+        <NavLink to='/our-company/marketing-officer'>Words from Marketing Officer</NavLink>
+      </Menu.Item>
+      <Menu.Item key="1">
+        <NavLink to='/procedure/why-nepalese'>Why Nepalese</NavLink>
       </Menu.Item>
       <Menu.Item key="8">
         <NavLink onClick={openCompanyProfilePdf}>View Company Profile</NavLink>
       </Menu.Item>
+
     </Menu>
   );
 
   const procedureMenu = (
     <Menu>
-      <Menu.Item key="1">
+      {/* <Menu.Item key="1">
         <NavLink to='/procedure/why-nepalese'>Why Nepalese</NavLink>
-      </Menu.Item>
+      </Menu.Item> */}
       <Menu.Item key="2">
         <NavLink to='/procedure/how-its-work'>How Its Work</NavLink>
       </Menu.Item>

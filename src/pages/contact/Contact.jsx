@@ -49,7 +49,7 @@ const Contact = () => {
             <div className='address_container'>              
               <h3>Contact Details</h3>
               <p>Link Star Manpower Services Pvt. Ltd.</p>
-              <p><FaMapMarkerAlt/>samakhusi,Kathmandu,Nepal</p>
+              <p><FaMapMarkerAlt/>Samakhusi,Kathmandu,Nepal</p>
               <p> <MdEmail/>info@linkstar.com.np</p>
               <p> <FaPhoneAlt/>+97714957047</p>           
             </div>

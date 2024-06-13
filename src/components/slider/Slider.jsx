@@ -24,7 +24,7 @@ const Slider = () => {
           <div className="text container">
             <p>Nepal's Top Recruitment Solution Provider</p>
             <h2 className="heading">
-            Need skilled workers from Nepal? Linkstart Manpower provides
+            Need skilled workers from Nepal? Linkstar Manpower provides
             the best employees for the Gulf, Malaysia, and Europe
             </h2>
             {/* <p>

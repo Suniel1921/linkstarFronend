@@ -11,7 +11,8 @@ import CreateVacency from './components/admin/CreateVacency';
 import DropdownData from './components/dropdown/DropdownData';
 import ApplyNow from './components/applynow/ApplyNow';
 import ContactData from './components/admin/ContactData';
-import AOS from "aos";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import OurBusinessPartner from './components/ourPartner/OurBusinessPartner';
 
@@ -19,6 +20,7 @@ import OurBusinessPartner from './components/ourPartner/OurBusinessPartner';
 const dropdownData = [
   {
     path: '/our-company/chairperson',
+    userImg : '/image/wordfromchairperson.jpg',
     heading: 'Word from Chairperson',
     para1: 'Greeting from Nepal',
     para2: 'Link Star Manpower Services Pvt. Ltd. takes pride and pleasure in being the moderating vendor of outsource human labor and wants to humbly thank all its foreign and domestic associates and clients, who trusted us enough to make possible what we are planning and executing.',
@@ -31,6 +33,7 @@ const dropdownData = [
   },
   {
     path: '/our-company/managing-director',
+    // userImg : '/image/wordfromchairperson.jpg',
     heading: 'Words from Executive Director',
     para1: `It is our great pleasure to introduce ourselves as one of the fast growing recruitment/manpower agency operating in Nepal.`,
     para2: `We would like to bring it to our valued client's notice that Link Star Manpower Services Pvt. Ltd., with its competent staff member stands for quality services in order to meet required demands of the clients.`,
@@ -43,6 +46,7 @@ const dropdownData = [
   },
   {
     path: '/our-company/intl-marketing-director',
+    userImg : '/image/marketingDirector.jpg',
     heading: `Words from Int'l Marketing Director `,
     para1: 'Dear Clients & Employers',
     para2: 'It is great pleasure to introduce ourselves as a specialist in the field of Manpower Recruiting. we are here for you to give the best of human work force, Whether our candidates with previous overseas employment experience, or those entering into overseas assignments or the first time, we ensure theyre available at the most competitive pay scales, and yet prepared in every which way to deliver maximum efficiency. Even our continual expansion in workforce and client base cannot deter our commitment to you, or compel us to compromise on our quality.',
@@ -80,6 +84,7 @@ const dropdownData = [
  },
  {
   path : `/our-company/general-manager`,
+  userImg : '/image/generalManager.jpg',
   heading : `Word from General Manager`,
   para1: `Link Star Manpower Services Pvt. Ltd.' takes plume and pride in being the leading company of outsourced manpower and wants to humbly thank all its national and international affiliates and clients, whose hard work, faith & trust makes us potential and capable to deploy finest human force to work all over the world.`,
   para2 : `We are confident and Positive of fulfilling every aspects of recruitment with promising results. We stand by every averment we make in regards to how perfectly Nepalese professionals can enhance your organizations functioning and productivity. Nepalese professionals are the most pursued in every sector globally, for their intellectual, technical, physical and adaptive abilities. And when it comes to outsourcing manpower, we're the first and often the only company, which off-shore employers as well Nepalese professionals find dependable enough.`,
@@ -99,7 +104,8 @@ const dropdownData = [
   para4: `We look forward to working with your esteemed organization in the days to come with mutual benefits`,
   para5: `Assuring you of quality services.`,
   para6: `Thanks and regards,`,
-  para7 : `ANG DAWA SHERPA`
+  para7 : `ANG DAWA SHERPA`,
+  para8: 'Executive Director'
  },
 
 
@@ -163,10 +169,12 @@ const dropdownData = [
 
 
 const App = () => {
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 }); // You can adjust the duration as needed
-  }, []); // This runs once on component mount
+    //for aos animations
+    useEffect(() => {
+      AOS.init({
+        duration: 1000, // Animation duration
+      });
+    }, []);
 
   return (
     <Router>
@@ -181,8 +189,8 @@ const App = () => {
           <Route path='/our-business-partner' element={<OurBusinessPartner/>}/>
 
           {/* Render DropdownData components */}
-          {dropdownData.map(({ path, heading, para1, para2, para3, para4, para5, para6, para7, para8, para9, para10 }) => (
-            <Route key={path} path={path} element={<DropdownData heading={heading} para1={para1}  para2={para2} para3={para3} para4={para4} para5={para5} para6={para6} para7={para7} para8={para8} para9={para9} para10={para10}/>} />
+          {dropdownData.map(({ path, userImg, heading, para1, para2, para3, para4, para5, para6, para7, para8, para9, para10 }) => (
+            <Route key={path} path={path} element={<DropdownData heading={heading} userImg={userImg} para1={para1}  para2={para2} para3={para3} para4={para4} para5={para5} para6={para6} para7={para7} para8={para8} para9={para9} para10={para10}/>} />
           ))}
 
           <Route path='/dashboard/admin' element={<AdminDashboard />}>
