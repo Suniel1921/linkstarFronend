@@ -15,6 +15,8 @@ const OurBusinessPartner = () => {
       "/ourClients/kwait/4.png", "/ourClients/kwait/5.png", "/ourClients/kwait/6.png",
       "/ourClients/kwait/7.jpg",  "/ourClients/kwait/8.jpg",  "/ourClients/kwait/9.jpg",
       "/ourClients/kwait/10.jpg",  "/ourClients/kwait/11.jpg",  "/ourClients/kwait/12.jpg",
+      "/ourClients/qatar/15.jpg", "/ourClients/qatar/16.jpg", "/ourClients/qatar/17.jpg", 
+      "/ourClients/qatar/18.jpg",
 
     ],
     malaysia: [
@@ -33,8 +35,7 @@ const OurBusinessPartner = () => {
       "/ourClients/qatar/4.jpg", "/ourClients/qatar/5.jpg", "/ourClients/qatar/6.jpg",
       "/ourClients/qatar/7.jpg", "/ourClients/qatar/8.jpg", "/ourClients/qatar/9.jpg",
       "/ourClients/qatar/10.jpg", "/ourClients/qatar/11.jpg", "/ourClients/qatar/12.jpg",
-       "/ourClients/qatar/13.jpg", "/ourClients/qatar/14.jpg", "/ourClients/qatar/15.jpg",
-       "/ourClients/qatar/16.jpg", "/ourClients/qatar/17.jpg", "/ourClients/qatar/18.jpg",
+       "/ourClients/qatar/13.jpg", "/ourClients/qatar/14.jpg",
     ]
   };
 

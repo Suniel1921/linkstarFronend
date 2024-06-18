@@ -177,7 +177,7 @@ const Navbar = () => {
         <NavLink to='/our-company/general-manager'>Words from General Manager</NavLink>
       </Menu.Item>
       <Menu.Item key="6">
-        <NavLink to='/our-company/BOD'>Words from Executive Director</NavLink>
+        <NavLink to='/our-company/Executive-Director'>Words from Executive Director</NavLink>
       </Menu.Item>
       <Menu.Item key="4">
         <NavLink to='/our-company/marketing-officer'>Words from Marketing Officer</NavLink>
