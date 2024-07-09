@@ -104,7 +104,7 @@ const dropdownData = [
  },
  {
   path : '/our-company/Executive-Director',
-  userImg : '/image/harka.png',
+  userImg : '/image/harka.jpg',
   heading : `Word form Executive Director`,
   para1: `Dear Clients & Employers `,
   para2: ` It is our great pleasure to introduce ourselves as one of the fast growing recruitment/manpower agency operating in Nepal.`,

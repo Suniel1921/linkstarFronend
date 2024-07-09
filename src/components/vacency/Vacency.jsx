@@ -9,7 +9,27 @@ const Vacency = () => {
   const [vacancies] = useState([
     {
       _id: '1',
-      images: ['/demandImage/demand2.jpg'],
+      images: ['/demandImage/demand4.jpg'],
+      positions: ['Sales Associates', 'Cleaner (Indoor)', 'Quality Assurence Officer',  'Quality Assurence Coordinator', 'Cctv Operator'],
+      vacancy: ['Male: 18, Female: 29', 'Male: 7, Female: 0', 'Male: 1, Female: 0', 'Male: 1, Female: 0', 'Male: 2, Female: 0',],
+      salary: ['140KD', '85KD', '140KD','140KD','140KD', ],
+      food: 'Provided',
+      expiredDate: '16/July/2024',
+    },
+    {
+      _id: '2',
+      images: ['/demandImage/demand3.jpg'],
+      positions: ['Light Vachile Driver', 'Loading and Unloading Labor',],
+      vacancy: ['Male: 9, Female: 0', 'Male: 1, Female: 0',],
+      salary: ['140KD', '1000SR'],
+      food: 'Provided',
+      expiredDate: '15/July/2024',
+      // transportation: 'Provided',
+      // overtime: 'Available',
+    },
+    {
+      _id: '3',
+      images: ['/demandImage/demand.jpg'],
       positions: ['Restaurant Crew', 'Barista', 'StoreKeeper', 'Chefs Dcdp', 'Chefs Cdp', 'Dietitian'],
       vacancy: ['Male: 100, Female: 60', 'Male: 10, Female: 10', 'Male: 10, Female: 5', 'Male: 20, Female: 10', 'Male: 20, Female: 10', 'Male: 5, Female: 5'],
       salary: ['120KD', '130KD', '150KD', '160KD', '210KD', '250KD'],
@@ -18,9 +38,10 @@ const Vacency = () => {
       transportation: 'Provided',
       // overtime: 'Available',
     },
+   
     {
-      _id: '2',
-      images: ['/demandImage/demand.jpg'],
+      _id: '4',
+      images: ['/demandImage/demand2.jpg'],
       positions: ['Barista', 'Chefs Cdp', 'Chefs Dcdp', 'StoreKeeper', 'Dietitian', 'Indoor (Helper)', 'Restaurant Crew'],
       vacancy: ['Male: 2, Female: 0', 'Male: 5, Female: 5', 'Male: 10, Female: 10', 'Male: 5, Female: 5', 'Male: 5, Female: 5', 'Male: 20, Female: 10', 'Male: 100, Female: 60'],
       salary: ['130KD', '210KD', '160KD', '150KD', '250KD', '120KD', '120KD'],
@@ -29,7 +50,7 @@ const Vacency = () => {
       transportation: 'Provided',
       // overtime: 'Available',
     },
-    // Add more static vacancies as needed
+
   ]);
 
   const [selectedImage, setSelectedImage] = useState(null);
